@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avio-karte</title>
+    <link href="css/obrazac.css" rel="stylesheet">
+</head>
+<body>
+    <div class="omotac">
+        <section>
+            <h1>Avio-karte</h1>
+            <p class="uvod">Popunjavanjem obrasca obezbedite sebi najjeftinije avio-karte</p>
+            <form action="#">
+                <fieldset>
+                    <legend>Osnovni podaci</legend>
+                    <label for="name">Ime</label>
+                    <input type="text" id="name" name="name" placeholder="Ime">
+
+                    <label for="name2">Prezime</label>
+                    <input type="text" id="name2" name="name2" placeholder="Prezime">
+
+                    <label for="phone">Broj telefona</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Broj telefona">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Dodatne informacije</legend>
+                    <label for="date">Datum putovanja</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="qty">Broj putnika</label>
+                    <input type="number" id="qty" name="qty" min="1" max="10">
+
+                    <p>Odaberite zeljenog avioprevoznika:</p>
+                    <div class="radio">
+                    <label>
+                        <input type="radio" name="avioprevoz" value="airserbia" checked>Air Serbia
+                    </label>
+                    <label >
+                        <input type="radio" name="avioprevoz"
+                        value="wizzair">Wizz Air
+                    </label>
+                    <label>
+                        <input type="radio" name="avioprevoz" value="lufthansa">Lufthansa
+                    </label>
+                    <label>
+                        <input type="radio" name="avioprevoz"
+                        value="delta">Delta Air Lines
+                    </label>
+                    </div>
+
+                    <label for="klasa">Odaberite klasu:</label>
+                    <select id="klasa" name="klasa">
+                        <option selected>Odaberite...</option>
+                        <option value="ekonomska">Ekonomska</option>
+                        <option value="prva">Prva klasa</option>
+                        <option value="biznis">Biznis klasa</option>
+                    </select>
+                    <label for="comments">Posebni zahtevi:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Obavestenja</legend>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" value="subscribe" name="subscribe" checked>Dodajte me na E-mail listu
+                    </label>
+                    <label for="promocije">
+                        <input type="checkbox" id="promocije" value="promocije" name="promocije">Saljite mi posebne promocije
+                    </label>
+                </fieldset>
+                <button type="submit">Nastavite na placanje</button>
+            </form>
+        </section>
+        <aside>
+            <h2>Nasa lokacija</h2>
+            <address>
+                Bla-bla travel<br>
+                Jovana Milovanovica<br>
+                11000 Beograd<br>
+                tel:060123456
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.0090618724516!2d20.489107214921177!3d44.719426590849494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a73fe5adc3c61%3A0x1b87d2a93245ec5a!2sJovana%20Milovanovi%C4%87a%2052%2C%20Beograd!5e0!3m2!1shr!2srs!4v1590918979020!5m2!1shr!2srs" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </aside>
+
+    </div>
+    
+</body>
+</html>
